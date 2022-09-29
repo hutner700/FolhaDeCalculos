@@ -84,3 +84,9 @@ q3_util <- function(w){
 }
 # Utilidade das loterias
 q3_lot_a_util <- sapply(q3_lot_a,q3_util)
+q3_lot_b_util <- sapply(q3_lot_b,q3_util)
+# Esperanca da utilidade
+q3_esp_lot_a_util <- sum(q3_lot_a_util * q3_prob_a)
+q3_esp_lot_a_util
+q3_esp_lot_b_util <- sum(q3_lot_b_util * q3_prob_b)
+q3_esp_lot_b_util
